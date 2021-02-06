@@ -26,25 +26,6 @@ function textPlusImage() {
 function init() {
     textPlusImage()
     console.log("canvas:", canvas)
-    downBtn.onclick = function(){
-        download();
-    }    
-}
-
-function download() {
-    console.log(canvas)
-    canvas.toBlob(function(blob) {
-        var a = document.createElement("a")
-        document.body.appendChild(a)
-        a.style = "display: none"
-        blob.type = "octet-stream"
-                  
-        var url = URL.createObjectURL(blob)
-        a.href = url
-        a.download = "1.png"
-        a.click()
-        window.URL.revokeObjectURL(url)
-    })
 }
 
 init()

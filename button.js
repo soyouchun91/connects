@@ -16,7 +16,6 @@ function downloadBtnClicked(type){
 function makeImage() {
     const img = document.createElement("img");
     // 이미지에 텍스트 붙이기
-    img.innerText = msg
     img.src = imgFile
 }
 

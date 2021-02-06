@@ -4,7 +4,7 @@ let imgFile = ''
 function downloadBtnClicked(type){
     msg = prompt('今日の一言は?')
     alert('こんにちは、今日の一言は　「' + msg + '」　ですね！')
-    alert('設定完了！次の画面で保存してZOOMに設定してくださいね！')
+    alert('設定完了！次の画面で左下の保存ボタンをクリックしてください！その後、ご自身でZOOM背景に設定してくださいね！')
     download(type, msg)
 }
 
